@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+.center {    
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);  
+}
+
+.header {
+    background-image: url(img/top.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+        &__title {
+            padding-top: 196px;
+            padding-bottom: 12px;
+            color: rgb(32, 32, 39);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+        }
+        &__textBox{
+            padding-bottom: 64px; 
+            // Компенсировать отсутп кнопки в 16px
+        }
+        &__text{
+            color: rgb(32, 32, 39);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+                &_bold{
+                    font-weight: 600;
+                }
+        }
+        &__button {
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 16px 65px 16px 65px;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        &__button:hover{
+            background-color: #fff;
+            color: #000000;
+            transition: 0.5s;
+            }
+        
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 51px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    height: 90px;
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+.content{
+background-image: url(img/top_game.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.aboutgame {
+    padding-top: 94px;
+    padding-bottom: 72px;
+
+    &__title {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 24px;
+    }
+
+    &__cartbox {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
+
+    &__card {
+        grid-column: span 4;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    &__link {
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__info {
+        padding: 32px 32px 36px 32px;
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(247, 247, 247);
+        border-radius: 52px;
+        width: 108px;
+        height: 36px;
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}
