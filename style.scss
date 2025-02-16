@@ -17,13 +17,63 @@ a {
 }
 
 .header {
-    background-image: url(img/top.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+    background-color: rgb(225, 255, 143);
+    height: 710px;
+    position: relative;
+    &__star1{
+        position: absolute;
+        left: 63px;
+        top: 94px;
+    }
+    &__star2 {
+        position: absolute;
+        left: 156px;
+        top: 69px; 
+    }
+    &__star3 {
+        position: absolute;
+        right: 269px;
+        top: -10px; 
+    }
+    &__star4 {
+        position: absolute;
+        right: 231px;
+        top: 254px; 
+    }
+    &__star5 {
+        position: absolute;
+        right: 4.88px;
+        top: 379px; 
+    }
+    &__star6 {
+        position: absolute;
+        right: 113px;
+        top: 468px; 
+    }
+    &__star7 {
+        position: absolute;
+        right: 455px;
+        top: 538px; 
+    }
+    &__star8 {
+        position: absolute;
+        right: 344px;
+        top: 568px; 
+    }
+    &__star9 {
+        position: absolute;
+        right: -10px;
+        top: -9px;
+     
+    }
+    &__star10 {
+        position: absolute;
+        right: 61px;
+        top: 663px; 
+    }
         &__title {
             padding-top: 196px;
-            padding-bottom: 12px;
+            padding-bottom: 24px;
             color: rgb(32, 32, 39);
             font-size: 64px;
             font-weight: 700;
@@ -63,6 +113,7 @@ a {
             }
         
 }
+
 .scroll{
     display: flex;
     align-items: center;
@@ -84,24 +135,34 @@ a {
     }
 }
 
-.content{
-background-image: url(img/top_game.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.aboutgame {
-    padding-top: 94px;
-    padding-bottom: 72px;
-
+.aboutgame{
+background-color: #202027;
+position: relative;
+    &__box {
+        padding-top: 94px;
+        padding-bottom: 72px;
+    }
+    &__star11{
+        position: absolute;
+        left: 25px;
+        top: 770px;
+    }
+    &__star12{
+        position: absolute;
+        left: 40px;
+        top: 822px;
+    } 
+    &__star13{
+        position: absolute;
+        right: 1px;
+        top: 77px;
+    }
     &__title {
         color: #fff;
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
     }
-
     &__text {
         color: #fff;
         font-size: 24px;
@@ -109,15 +170,30 @@ background-size: cover;
         line-height: 32px;
         margin-top: 24px;
     }
-
-    &__cartbox {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+    &__position {
+        display: flex;
+        justify-content: center;
         gap: 32px;
     }
-
+    &__cardbox1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    &__cardbox2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    &__cardbox3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
     &__card {
-        grid-column: span 4;
         background: #fff;
         border-radius: 30px;
         box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
@@ -125,23 +201,28 @@ background-size: cover;
         display: flex;
         flex-direction: column;
         z-index: 1;
+            &_small{
+                height: 473px;
+            }
+            &_medium{
+                height: 512px;
+            }
+            &_large{
+                height: 551px;
+            }
     }
-
     &__link {
-        height: 100%;
+        height: 100%;    
     }
-
     &__img {
         width: 100%;
         border-radius: 30px;
         object-fit: cover;
         display: block;
     }
-
     &__info {
         padding: 32px 32px 36px 32px;
     }
-
     &__number {
         display: flex;
         align-items: center;
@@ -156,11 +237,11 @@ background-size: cover;
         line-height: 1.1;
         margin-bottom: 16px;
     }
-
     &__name {
         color: rgb(32, 32, 39);
         font-size: 32px;
         font-weight: 700;
         line-height: 1.2;
+        overflow: hidden;
     }
 }

@@ -19,14 +19,63 @@ a {
 }
 
 .header {
-  background-image: url(img/top.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
+  background-color: rgb(225, 255, 143);
+  height: 710px;
+  position: relative;
+}
+.header__star1 {
+  position: absolute;
+  left: 63px;
+  top: 94px;
+}
+.header__star2 {
+  position: absolute;
+  left: 156px;
+  top: 69px;
+}
+.header__star3 {
+  position: absolute;
+  right: 269px;
+  top: -10px;
+}
+.header__star4 {
+  position: absolute;
+  right: 231px;
+  top: 254px;
+}
+.header__star5 {
+  position: absolute;
+  right: 4.88px;
+  top: 379px;
+}
+.header__star6 {
+  position: absolute;
+  right: 113px;
+  top: 468px;
+}
+.header__star7 {
+  position: absolute;
+  right: 455px;
+  top: 538px;
+}
+.header__star8 {
+  position: absolute;
+  right: 344px;
+  top: 568px;
+}
+.header__star9 {
+  position: absolute;
+  right: -10px;
+  top: -9px;
+}
+.header__star10 {
+  position: absolute;
+  right: 61px;
+  top: 663px;
 }
 .header__title {
   padding-top: 196px;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
@@ -85,16 +134,28 @@ a {
   white-space: nowrap;
 }
 
-.content {
-  background-image: url(img/top_game.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .aboutgame {
+  background-color: #202027;
+  position: relative;
+}
+.aboutgame__box {
   padding-top: 94px;
   padding-bottom: 72px;
+}
+.aboutgame__star11 {
+  position: absolute;
+  left: 25px;
+  top: 770px;
+}
+.aboutgame__star12 {
+  position: absolute;
+  left: 40px;
+  top: 822px;
+}
+.aboutgame__star13 {
+  position: absolute;
+  right: 1px;
+  top: 77px;
 }
 .aboutgame__title {
   color: #fff;
@@ -109,13 +170,30 @@ a {
   line-height: 32px;
   margin-top: 24px;
 }
-.aboutgame__cartbox {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+.aboutgame__position {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.aboutgame__cardbox1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.aboutgame__cardbox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.aboutgame__cardbox3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 32px;
 }
 .aboutgame__card {
-  grid-column: span 4;
   background: #fff;
   border-radius: 30px;
   box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
@@ -123,6 +201,15 @@ a {
   display: flex;
   flex-direction: column;
   z-index: 1;
+}
+.aboutgame__card_small {
+  height: 473px;
+}
+.aboutgame__card_medium {
+  height: 512px;
+}
+.aboutgame__card_large {
+  height: 551px;
 }
 .aboutgame__link {
   height: 100%;
@@ -156,4 +243,5 @@ a {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
