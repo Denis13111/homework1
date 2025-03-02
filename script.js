@@ -46,7 +46,7 @@
 
 // //  Задание 9
 // const user = {
-//     name: Иван,
+//     name: 'Иван',
 //     age: 20,
 //     isAdmin: false,
 // }
