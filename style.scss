@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+.center {    
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);  
+}
+.noneStarMobile{
+    display: none;
+}
+
+.header {
+    background-color: rgb(225, 255, 143);
+    height: 710px;
+    position: relative;
+    &__star1{
+        position: absolute;
+        left: 63px;
+        top: 94px;
+    }
+    &__star2 {
+        position: absolute;
+        left: 156px;
+        top: 69px; 
+    }
+    &__star3 {
+        position: absolute;
+        right: 269px;
+        top: -10px; 
+    }
+    &__star4 {
+        position: absolute;
+        right: 231px;
+        top: 254px; 
+    }
+    &__star5 {
+        position: absolute;
+        right: 4.88px;
+        top: 379px; 
+    }
+    &__star6 {
+        position: absolute;
+        right: 113px;
+        top: 468px; 
+    }
+    &__star7 {
+        position: absolute;
+        right: 455px;
+        top: 538px; 
+    }
+    &__star8 {
+        position: absolute;
+        right: 344px;
+        top: 568px; 
+    }
+    &__star9 {
+        position: absolute;
+        right: 0;
+        top: -9px;
+    
+    }
+    &__star10 {
+        position: absolute;
+        right: 61px;
+        top: 663px; 
+    }
+        &__title {
+            padding-top: 196px;
+            padding-bottom: 24px;
+            color: rgb(32, 32, 39);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+        }
+        &__textBox{
+            padding-bottom: 64px; 
+            // Компенсировать отсутп кнопки в 16px
+        }
+        &__text{
+            color: rgb(32, 32, 39);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            max-width: 720px;
+                &_bold{
+                    font-weight: 600;
+                }
+        }
+        &__button {
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 16px 65px 16px 65px;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        &__button:hover{
+            background-color: #fff;
+            color: #000000;
+            transition: 0.5s;
+            }
+        
+}
+
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 51px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    height: 90px;
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+.scrollMobile{
+    display: none;
+}
+
+.aboutgame{
+background-color: #202027;
+position: relative;
+    &__box {
+        padding-top: 94px;
+        padding-bottom: 72px;
+    }
+    &__star11{
+        position: absolute;
+        left: 25px;
+        top: 770px;
+    }
+    &__star12{
+        position: absolute;
+        left: 40px;
+        top: 822px;
+    } 
+    &__star13{
+        position: absolute;
+        right: 1px;
+        top: 77px;
+    }
+    &__title {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+    }
+    &__text {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 24px;
+    }
+    &__position {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding-bottom: 50px;
+    }
+    &__cardbox1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    &__cardbox2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    &__cardbox3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    &__card {
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+            &_small{
+                height: 473px;
+            }
+            &_medium{
+                height: 512px;
+            }
+            &_large{
+                height: 551px;
+            }
+    }
+    &__link {
+        height: 100%;    
+    }
+    &__img {
+        width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        display: block;
+    }
+    &__info {
+        padding: 32px 32px 36px 32px;
+    }
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(247, 247, 247);
+        border-radius: 52px;
+        width: 108px;
+        height: 36px;
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        overflow: hidden;
+    }
+}
+.minigame {
+    background-color: #202027;
+    padding-bottom: 144px;
+    position: relative;
+    &__star14{
+        position: absolute;
+        right: 124px;
+        top: 93px;
+    }
+    &__star15{
+        position: absolute;
+        right: 45px;
+        top: 126px;
+    }
+    &__star16{
+        position: absolute;
+        right: 52px;
+        bottom: 65px;
+    }
+    &__star17{
+        position: absolute;
+        right: 150px;
+        bottom: 45px;
+    }
+    &__position {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+            &>.minigame__cart:nth-child(2n) {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+    }
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+    &__cart {
+        background-color: #fff;
+        display: flex;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        justify-content: space-between;
+    }
+    &__type{
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+    }
+    &__text{
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    &__button{
+        background-color: #202027;
+        border-radius: 60px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        padding: 16px 28px 16px 28px;
+        width: 247px;
+        margin-top: 12px;
+    }
+    &__button:hover{
+        background-color: #fff;
+        border: 1px solid rgb(0, 0, 0);
+        color: #000000;
+        transition: 0.5s;
+    }
+    &__img{
+        border-radius: 30px;
+    }
+    &__boxName{
+        display: flex;
+        flex-direction: column;
+        padding: 48px;
+        gap: 24px;
+    }
+}
+.footer{
+    background: rgb(189, 237, 53);
+    &__end{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 61px;
+    }
+}
+
+@import 'mobile';
