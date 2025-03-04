@@ -149,3 +149,34 @@
     }
 }
 }
+@media (max-width: 426px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header{
+        &__starMobile1{
+            display: block;
+            position: absolute;
+            left: 266px;
+            top: 0px;
+        }
+        &__starMobile4{
+            display: block;
+            position: absolute;
+            left: 295px;
+            top: 557px;
+        }
+        &__starMobile5{
+            display: block;
+            position: absolute;
+            left: 325px;
+            top: 580px;
+        }
+    }
+   .minigame{
+        &__title{
+           padding-left: 30px; 
+        }
+   }
+}
