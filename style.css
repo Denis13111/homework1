@@ -505,4 +505,31 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
+@media (max-width: 426px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__starMobile1 {
+    display: block;
+    position: absolute;
+    left: 266px;
+    top: 0px;
+  }
+  .header__starMobile4 {
+    display: block;
+    position: absolute;
+    left: 295px;
+    top: 557px;
+  }
+  .header__starMobile5 {
+    display: block;
+    position: absolute;
+    left: 325px;
+    top: 580px;
+  }
+  .minigame__title {
+    padding-left: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
