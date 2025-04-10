@@ -15,6 +15,99 @@ document.getElementById('startButton').addEventListener('click', function() {
     }
 });
 
+// Блок функции 
+// Задание 1
+
+// function min(a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+// console.log (min(8, 4));
+// console.log (min(6, 6));
+
+// Задание 2
+// function isOdd (n) {
+//     if (n % 2 === 0) {
+//         return 'Число четное'
+//     } else {
+//         return 'Число нечетное'
+//     }
+// }
+ 
+// console.log (isOdd(8));
+// console.log (isOdd(5));
+
+// Задание 3
+// function square(number) {
+//     return number ** 2
+// }
+// console.log (square (9));
+
+// const square = (number) => number ** 2; 
+
+// console.log (square (9));
+
+// Задание 4
+// function age () {
+//     let age = + prompt ('Сколько вам лет?');
+
+//     if (age <= 0) {
+//         alert ('Вы ввели неправильное значение');
+//     } else if (age >= 0 && age <= 12) {
+//         alert  ('Привет, друг!');
+//     } else if (age >= 13) {
+//         alert  ('Добро пожаловать');
+//     }
+// }
+// age();
+
+// Задание 5
+// function calc(a, b) {
+//  if (isNaN(a) || isNaN (b)) {
+//     console.log ('Одно или оба значения не являются числом');
+//  } else {
+//     return a * b
+//  }
+// }
+// console.log (calc ('NaN', 2));
+
+// Задание 6
+// function getNumber() {
+//     let number = prompt ('Введите число');
+
+//     if (isNaN (number)) {
+//         return 'Переданный параметр не является числом'
+//     } else {
+//         return `${number} в кубе ровняется ${number ** 3}`
+//     }
+// }
+// console.log (getNumber ());
+
+// Задание 7
+// function getArea(params) {
+//     return Math.PI * this.radius ** 2;
+// }
+// function getPerimeter(params) {
+//     return 2 * Math.PI * this.radius;
+// }
+
+// const circle1 = {
+//     radius: 10,
+//     methodGetArea: getArea,
+//     methodGetPerimeter: getPerimeter,
+// }
+// const circle2 = {
+//     radius: 20,
+//     methodGetArea: getArea,
+//     methodGetPerimeter: getPerimeter,
+// }
+// console.log (circle1.methodGetArea());
+// console.log (circle2.methodGetArea());
+// console.log (circle2.methodGetPerimeter());
+
 // // Задание 1
 // let a = 10;
 // alert (a);
@@ -244,95 +337,3 @@ document.getElementById('startButton').addEventListener('click', function() {
 // console.log (square2.getaArea());
 // console.log (square2.getPerimeter());
 
-// Блок функции 
-// Задание 1
-
-// function min(a, b) {
-//     if (a < b) {
-//         return a;
-//     } else {
-//         return b;
-//     }
-// }
-// console.log (min(8, 4));
-// console.log (min(6, 6));
-
-// Задание 2
-// function isOdd (n) {
-//     if (n % 2 === 0) {
-//         return 'Число четное'
-//     } else {
-//         return 'Число нечетное'
-//     }
-// }
- 
-// console.log (isOdd(8));
-// console.log (isOdd(5));
-
-// Задание 3
-// function square(number) {
-//     return number ** 2
-// }
-// console.log (square (9));
-
-// const square = (number) => number ** 2; 
-
-// console.log (square (9));
-
-// Задание 4
-// function age () {
-//     let age = + prompt ('Сколько вам лет?');
-
-//     if (age <= 0) {
-//         alert ('Вы ввели неправильное значение');
-//     } else if (age >= 0 && age <= 12) {
-//         alert  ('Привет, друг!');
-//     } else if (age >= 13) {
-//         alert  ('Добро пожаловать');
-//     }
-// }
-// age();
-
-// Задание 5
-// function calc(a, b) {
-//  if (isNaN(a) || isNaN (b)) {
-//     console.log ('Одно или оба значения не являются числом');
-//  } else {
-//     return a * b
-//  }
-// }
-// console.log (calc ('NaN', 2));
-
-// Задание 6
-// function getNumber() {
-//     let number = prompt ('Введите число');
-
-//     if (isNaN (number)) {
-//         return 'Переданный параметр не является числом'
-//     } else {
-//         return `${number} в кубе ровняется ${number ** 3}`
-//     }
-// }
-// console.log (getNumber ());
-
-// Задание 7
-// function getArea(params) {
-//     return Math.PI * this.radius ** 2;
-// }
-// function getPerimeter(params) {
-//     return 2 * Math.PI * this.radius;
-// }
-
-// const circle1 = {
-//     radius: 10,
-//     methodGetArea: getArea,
-//     methodGetPerimeter: getPerimeter,
-// }
-// const circle2 = {
-//     radius: 20,
-//     methodGetArea: getArea,
-//     methodGetPerimeter: getPerimeter,
-// }
-// console.log (circle1.methodGetArea());
-// console.log (circle2.methodGetArea());
-// console.log (circle2.methodGetPerimeter());
