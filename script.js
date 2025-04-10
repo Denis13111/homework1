@@ -1,3 +1,20 @@
+document.getElementById('startButton').addEventListener('click', function() {
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+
+    while (true) {
+        const guess = parseInt(prompt("Угадайте число от 1 до 100:"));
+
+        if (guess > secretNumber) {
+            alert("Загаданное число меньше");
+        } else if (guess < secretNumber) {
+            alert("Загаданное число больше");
+        } else {
+            alert("Вы угадали!");
+            break; 
+        }
+    }
+});
+
 // // Задание 1
 // let a = 10;
 // alert (a);
@@ -178,3 +195,144 @@
 // for (let i = friday; i <= dayMonth; i += 7) {
 //     console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
 // }
+
+// Мое решение
+// const user = {
+//     name: 'Игорь',
+//     age: 24,
+//     city: 'Уфа',
+//     getinfo () {
+//         console.log (`Пользователь ${user.name}, возраст ${user.age} года, проживает в городе ${user.city}`)
+//     }
+// };
+// user.getinfo ();
+
+// Решение школы
+// const user = {
+//     name: 'Джон',
+//     age: 45,
+//     city: 'Нью-Йорк',
+//     getInfo() {
+//        return `Пользователь ${user.name}, возраст ${user.age}, проживает в городе ${user.city}`;
+//     }
+//  };
+
+//  console.log(user.getInfo()); 
+
+// function getRectangleArea() {
+// return this.width * this.height;
+// };
+// function getRectanglePerimeter() {
+// return this.width * 2 + this.height * 2;
+// };
+
+// const square1 = {
+//     width: 12,
+//     height: 29,
+//     getaArea: getRectangleArea,
+//     getPerimeter: getRectanglePerimeter,
+// };
+// const square2 = {
+//     width: 31,
+//     height: 17,
+//     getaArea: getRectangleArea,
+//     getPerimeter: getRectanglePerimeter,
+// };
+
+// console.log (square1.getaArea());
+// console.log (square1.getPerimeter());
+// console.log (square2.getaArea());
+// console.log (square2.getPerimeter());
+
+// Блок функции 
+// Задание 1
+
+// function min(a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+// console.log (min(8, 4));
+// console.log (min(6, 6));
+
+// Задание 2
+// function isOdd (n) {
+//     if (n % 2 === 0) {
+//         return 'Число четное'
+//     } else {
+//         return 'Число нечетное'
+//     }
+// }
+ 
+// console.log (isOdd(8));
+// console.log (isOdd(5));
+
+// Задание 3
+// function square(number) {
+//     return number ** 2
+// }
+// console.log (square (9));
+
+// const square = (number) => number ** 2; 
+
+// console.log (square (9));
+
+// Задание 4
+// function age () {
+//     let age = + prompt ('Сколько вам лет?');
+
+//     if (age <= 0) {
+//         alert ('Вы ввели неправильное значение');
+//     } else if (age >= 0 && age <= 12) {
+//         alert  ('Привет, друг!');
+//     } else if (age >= 13) {
+//         alert  ('Добро пожаловать');
+//     }
+// }
+// age();
+
+// Задание 5
+// function calc(a, b) {
+//  if (isNaN(a) || isNaN (b)) {
+//     console.log ('Одно или оба значения не являются числом');
+//  } else {
+//     return a * b
+//  }
+// }
+// console.log (calc ('NaN', 2));
+
+// Задание 6
+// function getNumber() {
+//     let number = prompt ('Введите число');
+
+//     if (isNaN (number)) {
+//         return 'Переданный параметр не является числом'
+//     } else {
+//         return `${number} в кубе ровняется ${number ** 3}`
+//     }
+// }
+// console.log (getNumber ());
+
+// Задание 7
+// function getArea(params) {
+//     return Math.PI * this.radius ** 2;
+// }
+// function getPerimeter(params) {
+//     return 2 * Math.PI * this.radius;
+// }
+
+// const circle1 = {
+//     radius: 10,
+//     methodGetArea: getArea,
+//     methodGetPerimeter: getPerimeter,
+// }
+// const circle2 = {
+//     radius: 20,
+//     methodGetArea: getArea,
+//     methodGetPerimeter: getPerimeter,
+// }
+// console.log (circle1.methodGetArea());
+// console.log (circle2.methodGetArea());
+// console.log (circle2.methodGetPerimeter());
